@@ -1,7 +1,13 @@
-import Home from "./pages/Home"
+import Home from "./components/Home"
+import Instructions from "./pages/Home"
 
 function App() {
-  return <Home />
+  return (
+    <>
+  <Home />
+  <Instructions />
+  </>
+  )
 }
 
 export default App
