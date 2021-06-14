@@ -1,0 +1,17 @@
+[
+  {
+    "id": "basic",
+    "price": 140.0,
+    "label": "The Basic Plan"
+  },
+  {
+    "id": "intermediate",
+    "price": 340.0,
+    "label": "The Team Plan"
+  },
+  {
+    "id": "enterprise",
+    "price": 1000000.0,
+    "label": "The Enterprise Plan"
+  }
+]

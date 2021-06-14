@@ -1,0 +1,31 @@
+{
+  "basic": {
+    "id": "basic",
+    "label": "The Basic Plan",
+    "features": [
+      "Best for individuals",
+      "Lots of magic for free",
+      "Free for 2 hours then $140/month",
+      "Limited time offer"
+    ]
+  },
+  "intermediate": {
+    "id": "intermediate",
+    "label": "The Team Plan",
+    "features": [
+      "Best for startups and teams",
+      "Even more magic for free",
+      "Honestly you don't get much more than Basic but you pay more"
+    ]
+  },
+  "enterprise": {
+    "id": "enterprise",
+    "label": "The Enterprise Plan",
+    "features": [
+      "You pay a lot more",
+      "We answer the phone when you call (usually)!",
+      "Email support also included, guaranteed 2-week response time",
+      "You probably just want the basic plan"
+    ]
+  }
+}
