@@ -37,7 +37,7 @@ function Explainer() {
           You are allowed to change anything you would like with the way we've
           set up this challenge, with one exception: please do not change the
           data in the JSON files - they are specifically designed to require you
-          to make <code>list</code> and <code>detail</code> API calls separately
+          to make list and detail API calls separately
         </li>
         <li>
           This repo is setup to use JavaScript, but if you're more comfortable
