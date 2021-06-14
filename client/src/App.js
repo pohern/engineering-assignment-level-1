@@ -1,13 +1,12 @@
-import Home from "./components/Home"
-import Instructions from "./pages/Home"
+import Home from "./components/Home";
+
 
 function App() {
   return (
     <>
-  <Home />
-  <Instructions />
-  </>
-  )
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
