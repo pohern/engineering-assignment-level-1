@@ -133,11 +133,12 @@ function Explainer() {
       </p>
       <h4>Wrapping Up</h4>
       <p>
-        When you're done, make a pull request back to the main repo. Be sure to
-        write pull request comments the way you would if this were being merged
-        into a production system. Also, you'll probably want to remove the{" "}
-        <code>&lt;Explainer /&gt;</code> line from <code>Home.js</code> to
-        remove this explainer.
+        When you're done, make a pull request back to{" "}
+        <strong>your own repo</strong>. Do not make a PR to this repo as that
+        will be public. Be sure to write pull request comments the way you would
+        if this were being merged into a production system. Also, you'll
+        probably want to remove the <code>&lt;Explainer /&gt;</code> line from{" "}
+        <code>Home.js</code> to remove this explainer.
       </p>
       <p>
         We appreciate you taking the time to complete this task, and look

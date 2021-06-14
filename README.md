@@ -4,7 +4,7 @@ Welcome to our Level 1 engineer coding assignment. Most of the details of what i
 
 ## First Steps
 
-First, fork this repo into your own GitHub account (private or public is fine). When you are done with the challenge, make a pull request back to this repo. We will go over the pull request during the discussion about your solution.
+First, fork this repo into your own GitHub account (private or public is fine). When you are done with the challenge, make a pull request back to **your fork** of the repo and send back a link to your PR. Do not make a pull request back to the Coastline repo as it is public and others will be able to see your solution. We will go over your pull request during the discussion about your solution.
 
 ## Running
 
