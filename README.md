@@ -26,4 +26,8 @@ npm install && npm run client-install && npm run dev
 
 This will start both the express server (http://localhost:5000) and the React client (http://localhost:3000).
 
-You can now make changes to either the server or client and your changes will reload in real time in your browser.
+You can now make changes to either the server or client code and your changes will reload in real time in your browser.
+
+## Assignment Details
+
+Once you have started the server, load the client in your browser (http://localhost:3000). The page that loads includes a component with the full details of what you're building. Have fun!
