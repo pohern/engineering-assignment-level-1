@@ -83,7 +83,7 @@ function Explainer() {
           which takes <code>id</code> as a query parameter, and returns the
           corresponding object from the <code>data-details.json</code> object.
           Note that there is a lot of overlap between the data, though{" "}
-          <code>data-prices.json</code> also includes the price per package
+          <code>data-prices.json</code> also includes the price per product
         </li>
         <li>
           On the client side, in <code>/client/src/</code>, you will want to
