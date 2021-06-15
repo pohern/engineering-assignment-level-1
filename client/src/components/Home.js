@@ -38,7 +38,7 @@ const Home = () => {
           data.map((product) => (
 
             <button onClick={onClick} data-id={product.id} key={product.id} style={{padding:"10px", margin:"10px"}}>
-              {product.label}, ${product.price}
+              {product.label} <br/> ${product.price}
             </button>
 
           ))}
