@@ -34,10 +34,12 @@ const Home = () => {
       <h1 style={{textDecoration: 'underline'}}>Product Page</h1>
       <div>
         {data &&
-          data.map((product) => (
+          data.map((product, idx) => (
+
             <button onClick={onClick} data-id={product.id} key={product.id} style={{padding:"10px", margin:"10px"}}>
-              {product.label}
+              {product.label}, ${product.price}
             </button>
+
           ))}
       </div>
       <div>
