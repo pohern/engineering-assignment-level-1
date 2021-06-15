@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Details from './Details'
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -42,18 +43,7 @@ const Home = () => {
 
           ))}
       </div>
-      <div>
-        {details && (
-          <div>
-            <h3 style={{textDecoration:"underline"}}>{details.label}</h3>
-            <ul style={{alignItems:"center", display:"inline-block", padding:'0', textAlign:'left'}}>
-            {details.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-            ))}
-            </ul>
-          </div>
-        )}
-      </div>
+            <Details onClick={onClick} details={details}/>
     </div>
   );
 };
