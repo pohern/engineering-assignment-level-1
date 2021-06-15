@@ -35,7 +35,7 @@ const Home = () => {
       <h1 style={{textDecoration: 'underline'}}>Product Page</h1>
       <div>
         {data &&
-          data.map((product, idx) => (
+          data.map((product) => (
 
             <button onClick={onClick} data-id={product.id} key={product.id} style={{padding:"10px", margin:"10px"}}>
               {product.label}, ${product.price}
@@ -43,7 +43,7 @@ const Home = () => {
 
           ))}
       </div>
-            <Details onClick={onClick} details={details}/>
+            <Details details={details}/>
     </div>
   );
 };
