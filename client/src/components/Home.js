@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Details from './Details'
 
 const Home = () => {
   const [data, setData] = useState([]);
   const [details, setDetails] = useState(null);
-  const getData = () => {
-    fetch("http://localhost:5000/api/v1/products")
+  async function getData() {
+    await fetch("http://localhost:5000/api/v1/products")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setData(data);
       });
   };
@@ -21,14 +21,6 @@ const Home = () => {
         return response.json();
       })
       .then((details) => {
-        console.log(details);
-        // const detailArr = []
-        // let newObject = {};
-        // for (const [key, value] of Object.entries(details)) {
-        //     newObject[key] = value;
-        //   detailArr.push(newObject);
-        // } 
-        // console.log(detailArr)
         setDetails(details);
       });
   }
@@ -39,31 +31,20 @@ const Home = () => {
 
   
   return (
-    <>
-      <h1>Hello</h1>
+    <div style={{textAlign:"center", display:'flex', flexDirection:"column"}}>
+      <h1 style={{textDecoration: 'underline'}}>Product Page</h1>
       <div>
         {data &&
           data.map((product) => (
-            <button onClick={onClick} data-id={product.id} key={product.id}>
-              {product.label}
+
+            <button onClick={onClick} data-id={product.id} key={product.id} style={{padding:"10px", margin:"10px"}}>
+              {product.label} <br/> ${product.price}
             </button>
+
           ))}
       </div>
-      <div>
-        {details && (
-          <>
-            <h3>{details.label}</h3>
-            {/* <h3>{details.id}</h3> */}
-            {/* <h3>{details.features}</h3> */}
-            <ul>
-            {details.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-            ))}
-            </ul>
-          </>
-        )}
-      </div>
-    </>
+            <Details details={details}/>
+    </div>
   );
 };
 
