@@ -4,8 +4,8 @@ import Details from './Details'
 const Home = () => {
   const [data, setData] = useState([]);
   const [details, setDetails] = useState(null);
-  const getData = () => {
-    fetch("http://localhost:5000/api/v1/products")
+  async function getData() {
+    await fetch("http://localhost:5000/api/v1/products")
       .then((response) => {
         return response.json();
       })
